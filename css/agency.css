@@ -170,7 +170,7 @@ img::-moz-selection {
 }
 
 header.masthead {
-  text-align: center;
+  text-align: top;
   color: white;
   background-image: url("../img/header-bg.jpg");
   background-repeat: no-repeat;
@@ -191,6 +191,7 @@ header.masthead .intro-text .intro-lead-in {
   font-size: 22px;
   font-style: italic;
   line-height: 22px;
+  color: black;
   margin-bottom: 25px;
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
