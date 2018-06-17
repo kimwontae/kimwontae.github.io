@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Agency - Start Bootstrap Theme</title>
+    <title>Smart IOT Blind and Door</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -38,7 +38,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
 		    <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#role">맡은역할</a>
+              <a class="nav-link js-scroll-trigger" href="#role">참여명단</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#bgitem">구상배경</a>
@@ -50,7 +50,7 @@
               <a class="nav-link js-scroll-trigger" href="#useitem">사용소자</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">소스 및 회로도</a>
+              <a class="nav-link js-scroll-trigger" href="#about">순서도, 소스 및 회로도</a>
             </li>
 			<li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#test">시연</a>
@@ -64,7 +64,7 @@
     <header class="masthead">
       <div class="container">
         <div class="intro-text">
-          <div class="intro-lead-in"></div>
+          <div class="intro-lead-in">.</div>
           <div class="intro-heading text-uppercase"></div>
         </div>
       </div>
@@ -187,11 +187,11 @@
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4>수동모드, 자동모드 선택</h4>
-                    <h4 class="subheading">자동모드시</h4>
+                    <h4>기본구동</h4>
+                    <h4 class="subheading"></h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">CDS조도센서값을 읽어서 일정 값 이하일 시에는 Stepper motor를 동작하여 블라인드를 내리고 LED를 ON 시킴</p>
+                    <p class="text-muted">NODE MCU에 내장된 ESP8266칩을 사용하여서 WIFI에 접속 후 MCU고유의 IP주소로 html의 언어를 텍스트 형식으로 보내주어 웹 브라우저를 구성.</p>
                   </div>
                 </div>
               </li>
@@ -201,12 +201,39 @@
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4>수동모드, 자동모드 선택</h4>
-                    <h4 class="subheading">수동모드시</h4>
+                    <h4>기본구동</h4>
+                    <h4 class="subheading"></h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">스마트폰이나 PC의 웹 페이지에서 LED와 Servo motor, Stepper motor를 동작시켜 각각 현관문, 블라인드를 수동으로 제어할수있다.</p>
-
+                    <p class="text-muted">웹 브라우저에 버튼 누를 때의 텍스트의 인덱스 값을 읽어서 각각의 맞는 수행을 하게 됨.</p>
+		       <li>
+                <div class='timeline-image'>
+                  <img class='rounded-circle img-fluid' src='img/about/3.jpg' alt=''>
+                </div>
+                <div class='timeline-panel'>
+                  <div class='timeline-heading'>
+                    <h4>수동모드, 자동모드 선택</h4>
+                    <h4 class='subheading'>자동모드시</h4>
+                  </div>
+                  <div class='timeline-body'>
+                    <p class='text-muted'>CDS(조도센서)값에 따라 밝기가 밝으면 블라인드를 올리고 LED를 끄고, 어둡다면 블라인드를 내리고 LED를 점등함</p>
+                  </div>
+                </div>
+              </li>
+			  <li class='timeline-inverted'>
+                <div class='timeline-image'>
+                  <img class='rounded-circle img-fluid' src='img/about/4.jpg' alt=''>
+                </div>
+                <div class='timeline-panel'>
+                  <div class='timeline-heading'>
+                    <h4>수동모드, 자동모드 선택</h4>
+                    <h4 class='subheading'>수동모드시</h4>
+                  </div>
+                  <div class='timeline-body'>
+                    <p class='text-muted'>스마트폰이나 PC의 웹 페이지에서 LED와 Servo motor, Stepper motor를 동작시켜 각각 현관문, 블라인드를 수동으로 제어할수있다.</p>
+                  </div>
+                </div>
+              </li>
               <li class="timeline-inverted">
                 <div class="timeline-image">
                   <h4>Smart
@@ -218,7 +245,7 @@
           </div>
         </div>
       </div>
-    </section>
+  </section>
 
     <!-- useitem 사용소자-->
     <section class="bg-light" id="useitem">
@@ -286,12 +313,52 @@
               <p class="text-muted">빛의양 측정</p>
             </div>
           </div>
+		  
           <div class="col-md-4 col-sm-6 portfolio-item">
-
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>L9110s</h4>
+              <p class="text-muted">모터드라이버</p>
+            </div>
           </div>
+		  
           <div class="col-md-4 col-sm-6 portfolio-item">
-
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>기타소자</h4>
+              <p class="text-muted">저항, LED</p>
+            </div>
           </div>
+		  
+		  <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal7">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/07-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>커플러</h4>
+              <p class="text-muted">Stepper motor와 Blind 축을 연결</p>
+            </div>
+          </div>
+		  
         </div>
       </div>
     </section>
@@ -307,48 +374,56 @@
           </div>
         </div>
         <div class="row">
+		
+		
           <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal8">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+              <img class="img-fluid" src="img/portfolio/08-thumbnail.jpg" alt="">
             </a>
             <div class="portfolio-caption">
               <h4>순서도</h4>
               <p class="text-muted">Flow chart</p>
             </div>
           </div>
+		  
+		  
           <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal9">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
+              <img class="img-fluid" src="img/portfolio/09-thumbnail.jpg" alt="">
             </a>
             <div class="portfolio-caption">
               <h4>소스</h4>
               <p class="text-muted">작품에 적용된 소스</p>
             </div>
           </div>
+		  
+		  
           <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal10">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
+              <img class="img-fluid" src="img/portfolio/10-thumbnail.jpg" alt="">
             </a>
             <div class="portfolio-caption">
               <h4>회로도</h4>
               <p class="text-muted">작품에 구성된 회로도</p>
             </div>
           </div>
+		  
+		  
           <div class="col-md-4 col-sm-6 portfolio-item">
           
           </div>
@@ -404,6 +479,31 @@
       </div>
     </section>
 
+	
+	
+	    <!--출처-->
+    <section id="test">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Reference</h2>
+            <h3 class="section-subheading text-muted">작품 작업간 참조한 사이트.</h3>
+          </div>
+        </div>
+        <div class="col-lg-12 text-center">
+          <div class="col-lg-12">
+              <div class="section-subheading text-muted">
+                <h2>https://cosmosjs.blog.me/221035554683</h2>
+				<br></br>
+				<h3>http://www.instructables.com/id/Quick-Start-to-Nodemcu-ESP8266-on-Arduino-IDE/</h3>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+	
+	
     <!-- Footer -->
     <footer>
       <div class="container">
@@ -559,7 +659,7 @@
       </div>
     </div>
 
-    <!-- Modal 5-->
+    <!-- Modal 5 모터드라이버-->
     <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -573,18 +673,15 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <h2 class="text-uppercase">L9110s</h2>
+                  <p class="item-intro text-muted">Stepper motor를 제어하기 위한 모터 드라이버</p>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <p>Stepper motor를 제어하기 위한 모터 드라이버로 일전에 라인트레이서구동 당시 사용했던 모터드라이버이다.</p>
                   <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Southwest</li>
-                    <li>Category: Website Design</li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
-                    Close Project</button>
+                    Close</button>
                 </div>
               </div>
             </div>
@@ -593,7 +690,7 @@
       </div>
     </div>
 
-    <!-- Modal 6 -->
+    <!-- Modal 6 기타-->
     <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -607,18 +704,48 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <h2 class="text-uppercase">기타소자</h2>
+                  <p class="item-intro text-muted">작품 작업시 사용된 기타소자</p>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <p>기타 작품 작업시 사용된 소자이다. 330옴 저항과 LED이다.</p>
                   <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Window</li>
-                    <li>Category: Photography</li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
-                    Close Project</button>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+	<!-- Modal 7 캐플러-->
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">캐플러</h2>
+                  <p class="item-intro text-muted">Stepper motor와 블라인드축을 연결해줌.</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/07-full-1.jpg" alt="">
+				  <img class="img-fluid d-block mx-auto" src="img/portfolio/07-full-2.jpg" alt="">
+				  <img class="img-fluid d-block mx-auto" src="img/portfolio/07-full-3.jpg" alt="">
+                  <p>Stepper motor와 블라인드의 축을 연결해주는 장치로서 SolidWorks툴로 디자인하고 3D프린터를통해 제작하였다</p>
+                  <ul class="list-inline">
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close</button>
                 </div>
               </div>
             </div>
@@ -627,6 +754,113 @@
       </div>
     </div>
 
+	<!-- Modal 8 순서도-->
+    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">순서도</h2>
+                  <p class="item-intro text-muted">작품 구동의 순서도</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/08-full-1.jpg" alt="">
+				  <img class="img-fluid d-block mx-auto" src="img/portfolio/08-full-2.jpg" alt="">
+                  <p></p>
+                  <ul class="list-inline">
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  	<!-- Modal 9 소스-->
+    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">	
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">소스</h2>
+                  <p class="item-intro text-muted">작품에 적용된 소스.</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/09-full-1.jpg" alt="">
+				  <img class="img-fluid d-block mx-auto" src="img/portfolio/09-full-2.jpg" alt="">
+				  <img class="img-fluid d-block mx-auto" src="img/portfolio/09-full-3.jpg" alt="">
+				  <img class="img-fluid d-block mx-auto" src="img/portfolio/09-full-4.jpg" alt="">
+				  <img class="img-fluid d-block mx-auto" src="img/portfolio/09-full-5.jpg" alt="">
+				  <img class="img-fluid d-block mx-auto" src="img/portfolio/09-full-6.jpg" alt="">
+				  <img class="img-fluid d-block mx-auto" src="img/portfolio/09-full-7.jpg" alt="">
+				  <img class="img-fluid d-block mx-auto" src="img/portfolio/09-full-8.jpg" alt="">
+				  <img class="img-fluid d-block mx-auto" src="img/portfolio/09-full-9.jpg" alt="">
+				  <img class="img-fluid d-block mx-auto" src="img/portfolio/09-full-10.jpg" alt="">
+				  <img class="img-fluid d-block mx-auto" src="img/portfolio/09-full-11.jpg" alt="">
+				  <img class="img-fluid d-block mx-auto" src="img/portfolio/09-full-12.jpg" alt="">
+				  <img class="img-fluid d-block mx-auto" src="img/portfolio/09-full-13.jpg" alt="">
+                  <p></p>
+                  <ul class="list-inline">
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+	<!-- Modal 10 회로도-->
+    <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">회로도</h2>
+                  <p class="item-intro text-muted">작품 제작에 사용된 회로도</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/10-full.jpg" alt="">
+                  <p></p>
+                  <ul class="list-inline">
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+	
+	
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
